@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.UpdateNotesActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/updateTitle"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/edit_text_background"
+            android:padding="@dimen/_15sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/title"
+            android:imeOptions="actionNext"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/updateSubtitle"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/edit_text_background"
+            android:padding="@dimen/_15sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/subtitle"
+            android:imeOptions="actionNext"
+            android:inputType="text"/>
+
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:padding="@dimen/_10sdp"
+            android:layout_margin="@dimen/_7sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp">
+
+            <TextView
+                android:textSize="@dimen/_15ssp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/priority"/>
+            <ImageView
+                android:id="@+id/greenPriority"
+                android:layout_margin="@dimen/_5ssp"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:background="@drawable/green_shape"/>
+            <ImageView
+                android:id="@+id/yellowPriority"
+                android:layout_margin="@dimen/_5ssp"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:background="@drawable/yellow_shape"/>
+            <ImageView
+                android:id="@+id/redPriority"
+                android:layout_margin="@dimen/_5ssp"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:background="@drawable/red_shape"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/updateNotes"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_200sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:background="@drawable/edit_text_background"
+            android:gravity="start"
+            android:hint="@string/notes"
+            android:padding="@dimen/_15sdp"
+            android:imeOptions="actionDone"
+            android:inputType="text"/>
+
+    </LinearLayout>
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/updateNotesBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/_25sdp"
+        android:backgroundTint="@color/pink"
+        app:rippleColor="@color/white"
+        android:src="@drawable/ic_baseline_done_24"/>
+</RelativeLayout>
