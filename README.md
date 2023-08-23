@@ -12,6 +12,8 @@ Explain how to install and set up your project. Include any prerequisites, depen
 - [MVVM](https://developer.android.com/topic/libraries/architecture/viewmodel) : Saperate logic code from views and save the state in case the screen configuration changes.
 - [view binding](https://developer.android.com/topic/libraries/view-binding) : it generates a binding class for each XML layout file present in that module. An instance of a binding class contains direct references to all views that have an ID in the corresponding layout.
 - [LiveData](https://developer.android.com/topic/libraries/architecture/livedata) : Observe on data when updated.
+- [Room](https://developer.android.com/training/data-storage/room) : Save data in a local database.
+
 
 ## Preview
 ![1](https://github.com/abdulrahman988/Notes-app/assets/119031835/cecfefdc-91c5-40ae-a598-9d67480d786f)
