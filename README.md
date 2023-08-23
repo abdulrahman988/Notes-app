@@ -6,7 +6,7 @@ Notes app where user can add notes and save, update, delete, search and sort not
 - add, delete and update note
 - sort notes saved according to priority
 - search for notes saved
-- 
+  
 ## Libraries and technologies used
 Explain how to install and set up your project. Include any prerequisites, dependencies, or system requirements. Provide step-by-step instructions or commands for a smooth installation process.
 - [MVVM](https://developer.android.com/topic/libraries/architecture/viewmodel) : Saperate logic code from views and save the state in case the screen configuration changes.
